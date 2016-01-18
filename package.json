@@ -1,0 +1,36 @@
+{
+  "name": "version-check",
+  "description": "Check latest version numbers of npm modules",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lee Seoyeon",
+    "email": "i@ssen.name",
+    "url": "https://iamssen.github.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamssen/version-check.git"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "bin": {
+    "version-check": "./bin/version-check"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "run": "node dist/index.js",
+    "test": "gulp build && version-check angular2 rxjs d3 d3tip"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-clean": "*",
+    "gulp-sass": "*",
+    "gulp-tsc": "*"
+  },
+  "dependencies": {
+    "bluebird": "3.*",
+    "chalk": "1.*",
+    "package-json": "2.*"
+  }
+}
