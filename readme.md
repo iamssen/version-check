@@ -2,7 +2,12 @@
 
 ```sh
 npm install -g version-check
+
+// request specific modules
 version-check angular2 rxjs d3 d3tip
+
+// request package.json modules
+version-check
 ```
 
 ![screenshot](readme.png)

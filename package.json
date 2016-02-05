@@ -1,7 +1,7 @@
 {
   "name": "version-check",
   "description": "Check latest version numbers of npm modules",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Lee Seoyeon",
     "email": "i@ssen.name",
@@ -20,7 +20,8 @@
   "scripts": {
     "build": "gulp build",
     "run": "node dist/index.js",
-    "test": "gulp build && version-check angular2 rxjs d3 d3tip"
+    "test": "gulp build && version-check angular2 rxjs d3 d3tip",
+    "dev": "gulp build && cd /Users/ssen/Workspace/ssen.name && version-check"
   },
   "devDependencies": {
     "gulp": "*",
